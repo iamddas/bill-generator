@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#021a2cec;
+    color: #f9f9f9;
+}
+
+.heading{
+    margin-bottom: 5vh;
+    background-color:#06263e77;
+}
+
+h1,
+h4 {
+    text-align: center;
+}
+
+.head h2{
+    text-align: center;
+    width: 70%;
+    margin-bottom: 2vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 70%;
+    transition: all 0.5s ease-out allow-discrete;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: calc(33.333% - 20px);
+            -webkit-box-shadow: 14px 10px 38px -11px rgba(0, 0, 0, 0.48);
+            -moz-box-shadow: 14px 10px 38px -11px rgba(0, 0, 0, 0.48);
+            box-shadow: 14px 10px 38px -11px rgba(0, 0, 0, 0.48);
+}
+
+.card img {
+    width: 100%;
+}
+
+.minus,.plus{
+    background-color: #011224;
+    color:rgb(255, 255, 255);
+    border-radius: 1px;
+    width: 30px;
+}
+
+.info {
+    padding: 15px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.card:hover{
+    transform: scale(3,0.5s);
+}
+
+input[type="text"] {
+    width: 30px;
+    text-align: center;
+}
+
+.cart {
+    width: 30%;
+    background-color: #ddd;
+    color: #2a2a2a;
+    position: -webkit-sticky;
+    border-radius: 5px;
+  position: sticky;
+  -webkit-box-shadow: 14px 10px 38px -11px rgba(0, 0, 0, 0.48);
+            -moz-box-shadow: 14px 10px 38px -11px rgba(0, 0, 0, 0.48);
+            box-shadow: 14px 10px 38px -11px rgba(0, 0, 0, 0.48);
+}
+
+table {
+    color: #2a2a2a;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#totalBill {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#totalAmount {
+    color: #007bff;
+}
+
+#clearButton{
+    background-color: red;
+    color: #ddd;
+    border-radius: 7px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}

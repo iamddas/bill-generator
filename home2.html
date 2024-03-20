@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Indian Tiffin Order Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <h1>South Indian Tiffin Stall</h1>
+            <h4>Ameerpet,Hyderabad-500038</h4>
+        </div>
+    </header>
+    <div class="head">
+        <h2>Menu</h2>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <div class="card">
+                <title>South Indian Thali</title>
+                <img src="/assets/RESTAURANT_STYLE_SOUTH_INDIAN_THALI_original.jpg" alt="South Indian Thali" height="240px"
+                    width="320px">
+                <div class="info">
+                    <h3>South Indian Thali</h3>
+                    <p>Price: ₹50</p>
+                    <div class="quantity">
+                        <button class="minus">-</button>
+                        <input type="text" value="0" disabled>
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/assets/kadappa-for-idli-dosa.jpg" alt="Idli" height="240px" width="320px">
+                <div class="info">
+                    <h3>Idli Dosa</h3>
+                    <p>Price: ₹40</p>
+                    <div class="quantity">
+                        <button class="minus primary">-</button>
+                        <input type="text" value="0" disabled>
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/assets/South_Indian_Medu_Vada_Sambar_with_Medu_Vada_Maker-8.jpg" alt="Idli" height="240px"
+                    width="320px">
+                <div class="info">
+                    <h3>Vada</h3>
+                    <p>Price: ₹40</p>
+                    <div class="quantity">
+                        <button class="minus">-</button>
+                        <input type="text" value="0" disabled>
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/assets/567.jpg" alt="Dosa" height="240px"
+                    width="320px">
+                <div class="info">
+                    <h3>Dosa</h3>
+                    <p>Price: ₹50</p>
+                    <div class="quantity">
+                        <button class="minus">-</button>
+                        <input type="text" value="0" disabled>
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/assets/568.PNG" alt="Paratha" height="240px" width="320px">
+                <div class="info">
+                    <h3>Paratha</h3>
+                    <p>Price: ₹80</p>
+                    <div class="quantity">
+                        <button class="minus">-</button>
+                        <input type="text" value="0" disabled>
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/assets/mysore-bonda-1.webp" alt="Idli" height="240px"
+                    width="320px">
+                <div class="info">
+                    <h3>Mysore Bonda</h3>
+                    <p>Price: ₹20</p>
+                    <div class="quantity">
+                        <button class="minus">-</button>
+                        <input type="text" value="0" disabled>
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more cards here -->
+        </div>
+        <div class="cart">
+            <h2>Cart<i  style="float: right;" class="bi bi-cart4"></i></h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price <i class="bi bi-currency-rupee"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cart items will be displayed here -->
+                </tbody>
+            </table>
+            <p id="totalBill">Total Bill Amount: ₹<span id="totalAmount">0</span></p>
+            <button id="clearButton">Clear Cart</button>
+
+        </div>
+    </div>
+
+    <script src="script1.js">
+        
+    </script>
+</body>
+
+</html>
